@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/fin_dept_docs?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">dbadmin</property>
+    <property name="hibernate.connection.password">dbadmin</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.enable_lazy_load_no_trans">true</property>
+    <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
+    <property name="hibernate.show_sql">true</property>
+    <mapping resource="models/Initiator.hbm.xml"/>
+    <mapping resource="models/Status.hbm.xml"/>
+    <mapping resource="models/Document.hbm.xml"/>
+    <mapping resource="models/Type.hbm.xml"/>
+    <mapping resource="models/Performer.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>

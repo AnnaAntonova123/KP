@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <tab>
+        <name>Главная</name>
+        <link>/web/index.jsp</link>
+    </tab>
+    <tab>
+        <name>Документы</name>
+        <link>/web/showAllDocs</link>
+        
+    </tab>
+    <tab>
+        <name>Исполнители</name>
+        <link>/web/performers?performerid=1</link>
+    </tab>
+    <tab>
+        <name>Сроки</name>
+        <link>/web/showterms</link>
+    </tab>
+</menu>
